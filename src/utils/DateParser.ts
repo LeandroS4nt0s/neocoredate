@@ -1,4 +1,3 @@
-// src/utils/DateParser.ts
 export class DateParser {
     static parse(date: string): Date {
       const parsedDate = new Date(date);
