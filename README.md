@@ -4,13 +4,12 @@ NeoCoreDate is a TypeScript library designed to help developers with date valida
 
 ## Features
 
-- **Date Validator**: Validate dates based on a given format (e.g., `yyyy-mm-dd`, `dd-mm-yyyy`).
-- **Date Formatter**: Format dates into different formats (e.g., `yyyy-mm-dd`, `DD/MM/YYYY`).
+- **Date Validator**: Validate dates based on a given format (e.g., yyyy-mm-dd, dd-mm-yyyy).
+- **Date Formatter**: Format dates into different formats (e.g., yyyy-mm-dd, DD/MM/YYYY).
 - **Date Manipulator**: Perform operations like adding or subtracting days, months, etc., and format the results.
+- **Date Comparator**: Compare dates to check if one is earlier, later, or on the same day as another, and calculate the time remaining until a target date.
 
 ## Installation
-
-You can install the package via npm:
 
 ```bash
 npm install neocoredate
@@ -72,6 +71,26 @@ console.log('Date after adding 2 months:', DateFormatter.formatToISO(addedMonths
 
 const subtractedMonthsDate = DateManipulator.subtractMonths(date, 2);
 console.log('Date after subtracting 2 months:', DateFormatter.formatToISO(subtractedMonthsDate)); // Ex: 2025-12-01
+```
+
+### 4. Date Comparison
+
+The `DateComparator` class allows you to compare dates and calculate the time until a target date.
+
+#### Example:
+
+```typescript
+import { DateComparator } from 'neocoredate';
+
+const date1 = '2025-02-01';
+const date2 = '2025-03-01';
+
+console.log('Is date1 earlier than date2?', DateComparator.isEarlier(date1, date2)); // true
+console.log('Is date1 later than date2?', DateComparator.isLater(date1, date2)); // false
+console.log('Is date1 the same day as date2?', DateComparator.isSameDay(date1, date2)); // false
+
+const targetDate = '2025-12-25';
+console.log('Time until target date:', DateComparator.timeUntil(targetDate)); // Ex: "327 days, 14 hours, 30 minutes, and 12 seconds"
 ```
 
 ## License
