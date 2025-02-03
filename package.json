@@ -1,6 +1,6 @@
 {
   "name": "neocoredate",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Neocoredate is a lightweight, powerful JavaScript/TypeScript library for date manipulation, validation, and formatting. Easily add, subtract, and validate dates, and format them in various styles, including ISO and Brazilian formats. Ideal for developers seeking a simple, intuitive solution for date handling in web and mobile applications.",
   "license": "MIT",
   "author": "NeoCoreSoft Technologies",
