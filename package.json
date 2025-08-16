@@ -1,15 +1,39 @@
 {
   "name": "neocoredate",
-  "version": "1.0.0",
-  "description": "Neocoredate is a lightweight, powerful JavaScript/TypeScript library for date manipulation, validation, and formatting. Easily add, subtract, and validate dates, and format them in various styles, including ISO and Brazilian formats. Ideal for developers seeking a simple, intuitive solution for date handling in web and mobile applications.",
+  "version": "1.7.0",
+  "description": "Lightweight and powerful JavaScript/TypeScript library for date manipulation, validation, and formatting.",
+  "keywords": [
+    "date",
+    "datetime",
+    "javascript",
+    "typescript",
+    "validation",
+    "formatting",
+    "iso",
+    "brazilian-format",
+    "cli",
+    "web",
+    "mobile"
+  ],
   "license": "MIT",
-  "author": "Leandro",
+  "author": "Leandro Santos",
   "type": "commonjs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LeandroS4nt0s/neocoredate"
+  },
+  "homepage": "https://github.com/LeandroS4nt0s/neocoredate#readme",
+  "bugs": {
+    "url": "https://github.com/LeandroS4nt0s/neocoredate/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build": "tsc",
     "test": "jest"
